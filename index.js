@@ -163,7 +163,7 @@ const exibirParceiros = () => {
     });
     html += '</table>';
     tabelaContainer.innerHTML = html;
-    
-
+};
+exibirParceiros();
 });
 
