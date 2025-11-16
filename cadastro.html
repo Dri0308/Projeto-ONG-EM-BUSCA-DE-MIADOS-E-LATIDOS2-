@@ -25,6 +25,81 @@
             <img src="images/foto fundo-cadastro.jpg" alt="A direita uma mulher loira e branca de cabelos meio presos usando uma camiseta preta e calça jeans clara está sentada e segurando um cachorro que está olhando na direção dela. A mulher sorri. A esquerda tem uma moça branca de cabelos pretos sentada e sorrindo para o cachorro no colo da outra, enquanto tem as mãos em um cachorro preto entre suas pernas. Ela usa uma camiseta branca escrito volunteer e calça jeans escura. Ela está sorrindo.">
         </figure>
         </div>
+        <!--Formulário de Cadastro: Voluntariado-->
+    <main>
+        <section class="signup-section">
+            <h2><strong>Cadastro de voluntários</strong></h2>
+            <form method="post" id="volunteerForm" onsubmit="handleSubmit(event)">
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <div class="main-informations" id="mainInformations-vol">
+                        <label for="nome-vol">Nome Completo*: </label>
+                        <input type="text" id="nome-vol" name="nome" required>
 
+                        <label for="email-vol">Email*: </label>
+                        <input type="email" id="email-vol" name="email" required>
+
+                        <label for="cpf-vol">CPF*: </label>
+                        <input type="text" id="cpf-vol" name="cpf" required>
+
+                        <label for="idade-vol">Idade*: </label>
+                        <input type="number" id="idade-vol" name="idade" min="18" max="80">
+
+                        <label for="date-vol">Data de Nascimento*: </label>
+                        <input type="date" id="date-vol" name="data_nascimento" required>
+
+                        <label for="telefone-vol">Telefone para contato*: </label>
+                        <input type="text" id="telefone-vol" name="telefone" placeholder="(xx) xxxxx-xxxx" required>
+                        
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Endereço</legend>
+                    <div class="Address" id="address">
+                        <label for="endereco-vol">Endereço*: </label>
+                        <input type="text" id="endereco-vol" name="endereco" required>
+
+                        <label for="cep-vol">CEP*: </label>
+                        <input type="text" id="cep-vol" name="cep" required>
+
+                        <label for="cidade-vol">Cidade*: </label>
+                        <input type="text" id="cidade-vol" name="cidade" required>
+
+                        <label for="estado-vol">Estado*: </label>
+                        <input type="text" id="estado-vol" name="estado" required>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Conhecendo você!</legend>
+                    <div class="randomInformations">
+                        <label for="disponibilidade">Quando você pode atuar como voluntário?*</label>
+                        <textarea id="disponibilidade" name="disponibilidade" placeholder="Digite aqui..." required></textarea>
+
+                        <label for="atuacao-vol">Com o que gostaria de trabalhar?*</label>
+                        <select id="atuacao-vol" name="atuacao" required>
+                            <option value="">Selecione...</option>
+                            <option value="fiscal-da-adocao">Fiscal nas casas</option>
+                            <option value="levar-para-passear">Levar para passear</option>
+                            <option value="brincar-com-os-pets">Brincar</option>
+                            <option value="fiscal-de-doacoes">Fiscalizar doações</option>
+                            <option value="marketing">Marketing</option>
+                        </select>
+
+                        <label>Possui animais de estimação?*</label>
+                        <input type="radio" id="possui-sim" name="possui_animais" value="sim">
+                        <label for="possui-sim">Sim</label>
+                        <input type="radio" id="possui-nao" name="possui_animais" value="nao">
+                        <label for="possui-nao">Não</label>
+
+                        <label for="animais">Anexe foto dos seus animais (opcional)</label>
+                        <input type="file" id="animais" name="animais">
+                        <button onclick= "alert('Formulário Enviado com Sucesso!')"> Envie o formulário</button>
+                    </div>
+                </fieldset>
+            </form>
+
+        </section>
 </body>
 </html>
