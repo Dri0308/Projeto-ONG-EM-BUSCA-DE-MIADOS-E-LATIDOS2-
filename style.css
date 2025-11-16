@@ -42,3 +42,23 @@
     .col-xxl-1 {flex: 0 0 8.33%; max-width: 8.33%;}
 }
 
+:root{
+    --color-primary: #FFE4B5;
+    --color-secondary: #1E3A8A;
+    --color-accent: #FF4500;
+
+    --color-neutral-light: #F3F4F6;
+    --color-neutral-dark: #111827;
+
+    --color-success: #E6E6FA;
+    --color-error: 	#8B0000;
+    --color-warning: #FFD700;
+    --color-info: 	#8B4513;
+
+    --font-family-base: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    --font-family-heading: 'Poppins', 'sans-serif';
+    --font-size-h2: 1.5rem;
+    --font-size-h3: 1.25rem;
+    --font-size-body: 1rem;
+}
+
