@@ -255,5 +255,20 @@ footer{
     margin-top:10rem;
     font-size:0.875rem;
 }
+@media (max-width: 900px){
+    .galery1{grid-template-columns: repeat(2,1fr)}
+    nav ul{gap:1rem}
+}
 
+@media (max-width: 600px){
+    body{padding-top: calc(var(--header-height) + 120px)}
+    .galery1{grid-template-columns: 1fr}
+    .galery1 img, .galery2 img{height:160px}
+}
+
+@media (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+}
 
