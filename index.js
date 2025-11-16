@@ -32,4 +32,25 @@ document.addEventListener(DOMContentLoaded, () => {
         form.dataset.submmiting = 'false'; //Se for vazio, não grava os dados.
         return;
        }
+ const formData = {
+        nome,
+        email,
+        cpf : form.cpf.value.trim(),
+        idade: form.idade.value.trim(),
+        data_nascimento: form.data_nascimento.value.trim(),
+        telefone: form.telefone.value.trim(),
+        endereco: form.endereco.value.trim(),
+        cep: form.cep.value.trim(),
+        cidade: form.cidade.value.trim(),
+        estado: form.estado.value.trim(),
+        disponibilidade: form.disponibilidade.value.trim(),
+        atuacao: form.atuacao.value.trim(),
+        possui_animais: form.possui_animais.checked,
+        dataCadastro: new Date().toLocaleString()
+       };
+       
+        let voluntarios = JSON.parse(localStorage.getItem('voluntarios')) || [];
+        voluntarios.push (formData);
+        localStorage.setItem('voluntarios', JSON.stringify(voluntarios));
+    }
 
