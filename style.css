@@ -136,4 +136,46 @@ nav a{
     opacity:0.9;
 }
 nav a:hover, nav a:focus, nav a.active{opacity:1; transform: translateY(-2px);}
+h2{
+    color: #00008B;
+    padding: 2rem 0;
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-h2);
+}
+h3{color:#2E8B57; font-family: var(--font-family-base); font-size: var(--font-size-h3); margin-bottom:0.5rem; padding:2rem}
+p{font-size:1rem; margin:0.6rem 0}
+
+/* Apresentação / listas */
+.presentation{list-style:disc; margin:1rem 0; padding-left:1.25rem; font-size:1rem}
+.presentation li{margin:0.4rem 0}
+.presentation li::marker{color:#FF0000}
+
+/*Galerias de Imagens*/
+.galery1{
+    display:flex;
+    margin: 0rem;
+    position: relative;
+    padding: 10px;
+    bottom: 10px;
+}
+.galery2{
+    display:flex;
+    margin: 0rem;
+    position: relative;
+    padding: 10px;
+    bottom: 10px;
+}
+.galery1 img, .galery2 img{
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 8px;
+}
+
+figcaption{
+    position: absolute;
+    bottom: -15px;
+}
+
 
