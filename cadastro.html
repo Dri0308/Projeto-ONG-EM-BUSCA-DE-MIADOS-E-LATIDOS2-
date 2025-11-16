@@ -99,7 +99,48 @@
                     </div>
                 </fieldset>
             </form>
+ <h2>Gostou do nosso trabalho e quer ser um patrocinador?</h2>
+            <p>Preencha o formulário abaixo e entraremos em contato com você!</p>
 
-        </section>
+            <!--Formulário para empresas-->
+            <form method="post" id="donnerForm" onsubmit="handleSubmit(event)">
+                <section class="business-Informations" id="businessInformations">
+                    <fieldset>
+                        <legend>Dados Pessoais</legend>
+                            <label for="nome-buz">Nome Completo*: </label>
+                            <input type="text" id="nome-buz" name="nome" required>
+
+                            <label for="email-buz">Email*: </label>
+                            <input type="email" id="email-buz" name="email" required>
+
+                            <label for="cpf-buz">CPF*: </label>
+                            <input type="text" id="cpf-buz" name="cpf" required>
+
+                            <label for="idade-buz">Idade*: </label>
+                            <input type="number" id="idade-buz" name="idade" min="18" max="80">
+
+                            <label for="date-buz">Data de Nascimento*: </label>
+                            <input type="date" id="date-buz" name="data_nascimento" required>
+
+                            <label for="telefone-buz">Telefone para contato*: </label>
+                            <input type="text" id="telefone-buz" name="telefone" placeholder="(xx) xxxxx-xxxx" required>
+                            <legend >Dados da sua empresa</legend>
+                        <label for="nome-empresa">Nome da Empresa*: </label>
+                        <input type="text" id="nome-empresa" name="nome_empresa" required>
+
+                        <label for="razao-social">Razão Social*: </label>
+                        <input type="text" id="razao-social" name="razao_social" required>
+
+                        <label for="cnpj">CNPJ*:</label>
+                        <input type="text" id="cnpj" name="cnpj" placeholder="xx.xxx.xxx./0001-xx" required>
+
+                        <label for="telefoneComercial">Telefone comercial*: </label>
+                        <input type="text" id="telefoneComercial" name="telefone_comercial" placeholder="(xx) xxxxx-xxxx/(xx) xxxx-xxxx" required>
+                        <button onclick= "alert('CADASTRO ENVIADO')"> Envie o formulário</button>
+                    </fieldset>
+                </section>
+            </form>
+
+    </main>
 </body>
 </html>
